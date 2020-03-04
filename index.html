@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <ul>
+
+    <li><a href="index.html">home page</a></li>
+    <li><a href="shoping.html">shopping</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="contact.html">contact us </a></li>
+    <li><a href="newreleases.html">new releases</a></li>
+  </ul>
+
+<h1>Welcome To Mobiles World</h1>
+<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<i class="fa fa-instagram" style="font-size:48px;float:right;color:black"></i>
+<i class="fa fa-twitter" style="font-size:48px;float:right;color:black"></i>
+<i class="fa fa-shopping-bag" style="font-size:48px;Float:Right;color:Black"></i>
+<br>
+
+<br>
+<br>
+<p>We Provide mobiles worldwide</p>
+
+
+  <p>Scroll Down to see Our Latest offers.</p>
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="iphone11slideshow.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="samsungs10slideshow.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="huaweiproslideshow.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+
+
+
+
+
+
+<h1>Latest Offers.</h1>
+<div class="grid-container">
+  <div class="grid-item">
+<img src="iphone11.png">
+  <p>£729.99<p>
+  </div>
+
+  <div class="grid-item">
+<img src="iphone11pro.png">
+  <p>£1,049.00<p>
+  </div>
+
+  <div class="grid-item">
+    <img src="iphone11promax.jpg">
+  <p>£1,499.00<p>
+  </div>
+
+  <div class="grid-item">
+    <img src="samsungs10.jpg">
+    <p>£900.99<p>
+    </div>
+
+  <div class="grid-item">
+    <img src="samsungs10plus.png">
+    <p>£1,000.99<p>
+    </div>
+  <div class="grid-item">
+  <img src="samsungS10e.jpg">
+<p>£800.99<p>
+</div>
+  <div class="grid-item">
+    <img src="huaweip30lite.jpg">
+  <p>£700.99<p>
+  </div>
+  <div class="grid-item">
+    <img src="30.jpg">
+  <p>£800.99<p>
+  </div>
+  <div class="grid-item">
+    <img src="huaweip30.jpg">
+  <p>£800.99<p>
+
+  </div>
+
+
+
+
+
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+</body>
+</html>
